@@ -2,10 +2,23 @@ import React from 'react';
 
 const Cart = ({cart,removeCartHandler}) => {
 
+    // nice part for randaring condition 
     let messege;
     if(cart.length===0){
         messege= <p> Please buy at least One Items !!! </p>
     }
+    else if(cart.length===1){
+        messege=<div>
+            <h3>Give Me One </h3>
+            <h3>Give Me Anouther One </h3>
+            <p>Give Me Both </p>
+        </div>
+    }
+    else{
+        messege=<p>Thanks For Buying</p>
+    }
+    
+  
 
     console.log(cart)
     return (    
@@ -23,7 +36,7 @@ const Cart = ({cart,removeCartHandler}) => {
                 </p>)
             }
 
-            
+
             {
                 messege
             }
@@ -39,7 +52,7 @@ export default Cart;
 
 Conditional Rndaring------------------------------------------
 
-1.use Elements (if else)
+1.use Elements  in a variable and use  (if else and else if )
 
 
 
