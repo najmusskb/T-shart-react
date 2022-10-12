@@ -1,9 +1,14 @@
 import React from 'react';
 
 const Cart = ({cart,removeCartHandler}) => {
-    
+
+    let messege;
+    if(cart.length===0){
+        messege= <p> Please buy at least One Items !!! </p>
+    }
+
     console.log(cart)
-    return (
+    return (    
         <div>
             <h3><u>Order Now</u></h3>
             <h5>Order QuantityL: {cart.length}</h5>
@@ -18,8 +23,24 @@ const Cart = ({cart,removeCartHandler}) => {
                 </p>)
             }
 
+            
+            {
+                messege
+            }
+
         </div>
     );
 };
 
 export default Cart;
+
+
+/* 
+
+Conditional Rndaring------------------------------------------
+
+1.use Elements (if else)
+
+
+
+*/

@@ -23,14 +23,13 @@ const Home = () => {
 
 
 
-    
+
 const removeCartHandler=tshart=>{
     const remaining=cart.filter(ts=>ts.id !== tshart.id);
     setCart(remaining)
     // console.log(tshart)
 }
     return (
-        
         <div className='Home'>
            <div className='t-shart-container'>
 
