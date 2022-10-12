@@ -1,8 +1,6 @@
 import React from 'react';
 import './Cart.css'
-
 const Cart = ({cart,removeCartHandler}) => {
-
     // nice part for randaring condition 
     let messege;
     if(cart.length===0){
@@ -47,9 +45,7 @@ const Cart = ({cart,removeCartHandler}) => {
             }
             <p>Or  Operator</p>
             {
-
             cart.length === 4 || <h2>4 ta item na !!!</h2>
-
             }
 
         </div>

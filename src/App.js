@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Abouts from './components/About/Abouts';
+import Grandpa from './components/Grandpa/Grandpa';
 import Home from './components/Home/Home';
 import Orders from './components/Order/Orders';
 import Main from './Layout/Main';
@@ -22,6 +23,10 @@ function App() {
       {
         path:'/Abouts',
         element:<Abouts></Abouts>
+      },
+      {
+        path:'/grandpa',
+        element:<Grandpa></Grandpa>
       }
     ]
     }
