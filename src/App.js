@@ -7,6 +7,7 @@ import Orders from './components/Order/Orders';
 import Main from './Layout/Main';
 function App() {
   const router=createBrowserRouter([
+
     {
       path:'/',
       element:<Main></Main>,
@@ -39,5 +40,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
